@@ -21,6 +21,7 @@ In `/etc/hosts`
 - InfluxDB admin interface: `http://docker.local:8083`
 - Grafana interface: `http://docker.local:3000/` (user: admin, password: admin)
 - StatsD: running on default port `8125`
+- Chronograf interface: `http://docker.local:10000/`
 
 # Test metric
 

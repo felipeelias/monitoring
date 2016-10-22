@@ -17,3 +17,7 @@ services:
     image: grafana/grafana
     ports:
       - "3000:3000"
+  chronograf:
+    image: chronograf
+    ports:
+      - "10000:10000"
