@@ -1,0 +1,19 @@
+version: '2'
+services:
+  influxdb:
+    image: influxdb
+    ports:
+      - "8083:8083"
+      - "8086:8086"
+    volumes:
+      - ./etc/influxdb.conf:/etc/influxdb/influxdb.conf:ro
+  telegraf:
+    image: telegraf
+    ports:
+      - "8125:8125/udp"
+    volumes:
+      - ./etc/telegraf.conf:/etc/telegraf/telegraf.conf:ro
+  grafana:
+    image: grafana/grafana
+    ports:
+      - "3000:3000"
